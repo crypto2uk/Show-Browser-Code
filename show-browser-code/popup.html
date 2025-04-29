@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      width: 250px;
+      padding: 10px;
+    }
+    .input-group {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    label {
+      width: 75px;  /* 固定标签宽度 */
+      display: inline-block;
+    }
+    input {
+      width: 80px;  /* 统一输入框宽度 */
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .color-presets {
+      display: flex;
+      gap: 5px;
+      margin-top: 5px;
+      margin-bottom: 15px;  /* 增加与保存按钮的间距 */
+      flex-wrap: wrap;
+      margin-left: 75px;  /* 与标签对齐 */
+    }
+    .color-preset {
+      width: 20px;
+      height: 20px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+    .color-preset:hover {
+      transform: scale(1.1);
+    }
+    button {
+      margin-left: 75px;  /* 与标签对齐 */
+      padding: 5px 15px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="input-group">
+    <label for="profileId">浏览器编号:</label>
+    <input type="text" id="profileId" maxlength="3" pattern="[0-9]{1,3}">
+  </div>
+  <div class="input-group">
+    <label for="colorInput">颜色:</label>
+    <input type="text" id="colorInput" placeholder="#000000">
+  </div>
+  <div class="color-presets">
+    <div class="color-preset" style="background: #000000" data-color="#000000" title="黑色"></div>
+    <div class="color-preset" style="background: #FF0000" data-color="#FF0000" title="红色"></div>
+    <div class="color-preset" style="background: #00FF00" data-color="#00FF00" title="绿色"></div>
+    <div class="color-preset" style="background: #0000FF" data-color="#0000FF" title="蓝色"></div>
+    <div class="color-preset" style="background: #FF9900" data-color="#FF9900" title="橙色"></div>
+    <div class="color-preset" style="background: #FF00FF" data-color="#FF00FF" title="粉色"></div>
+  </div>
+  <button id="save">保存</button>
+  <script src="popup.js"></script>
+</body>
+</html> 

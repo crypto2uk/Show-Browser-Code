@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "显示浏览器编号",
+  "version": "1.0",
+  "description": "显示用户自定义的浏览器编号，可设置颜色",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 
