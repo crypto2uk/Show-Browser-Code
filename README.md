@@ -1,4 +1,4 @@
-# 显示浏览器编号 (Show Browser ID)
+# 显示浏览器编号 (Show Browser Code)
 
 [![License: GPL v3][license-shield]][license-url]
 
